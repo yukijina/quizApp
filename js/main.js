@@ -64,15 +64,52 @@ function myClick () {
         questionSpot.className = 'correct';
         //add one to incorrect
         correct++;
+        //text color green if the answe is correct
+        questionSpot.style.color = "rgb(13, 180, 54)";
+
     } else {
         //update class on questionSport
         questionSpot.className = 'incorrect';
         //add one to incorrect
         incorrect++;
+        //text color red if the answe is correct
+        questionSpot.style.color = "red";
     };
 
-  };
+  }; //end of loop
   //update correct and incorrect value
   document.getElementById('correct').textContent = correct;
   document.getElementById('incorrect').textContent = incorrect;
-}
+
+  if (correct >= 1) {
+    //create div and span for particle
+    var parDiv = document.createElement('div');
+    parDiv.id = 'particles-js';
+
+    var parDiv2 = document.createElement('div');
+    parDiv2.className = 'count-particles';
+
+    var parSpan = document.createElement('span');
+    parSpan.className = 'js-count-particles';
+
+    var footer = document.getElementsByTagName('footer')[0];
+    footer.appendChild(parDiv);
+    footer.appendChild(parDiv2);
+    parDiv2.appendChild(parSpan);
+
+
+// https://codepen.io/pen/
+  particlesJS("particles-js", {"particles":{"number":{"value":100,"density":{"enable":false,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"star","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"http://wiki.lexisnexis.com/academic/images/f/fb/Itunes_podcast_icon_300.jpg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":4,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":14,"direction":"left","random":false,"straight":true,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},
+  "interactivity":{
+    "detect_on":"canvas",
+    "events":{"onhover":{"enable":false,"mode":"grab"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":200,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles');
+
+  update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+
+} //end of if
+
+
+
+
+
+} //end of function

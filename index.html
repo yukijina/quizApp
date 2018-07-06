@@ -6,9 +6,14 @@
 		<!-- VIEWPORT -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- TITLE -->
-		<title></title>
+		<title>quiz time</title>
 		<!-- FONTAWESOME -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		<!-- GOOGLE FONT -->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<!-- ANIMATED CSS -->
+		<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 		<!-- BOOTSTRAP CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<!-- ORIGINAL CSS -->
@@ -17,48 +22,61 @@
 	<body>
 
 	<header class="container text-center">
-		<h1>Quiz App</h1>
-		<h2>Let's get started</h2>
+		<h1 class="title animated rubberBand">QUIZ TIME</h1>
+		<img class="img-fluid think-img" src="https://publicdomainq.net/images/201707/03s/publicdomainq-0010728lmf.jpg" alt="think">
+		<h2 class="title2">Let's get started</h2>
+		<a href="#question"><i class="fas fa-angle-double-down"></i></a>
 	</header>
 
-	<section class="container text-center">
+	<section class="container text-center" id="question">
 		<div class="row form-group">
-			<p id="question0">What is 5 + 5?</p>
+			<p id="question0" class="text-left">What is 5 + 5?</p>
 	  	<input type="text" id="answer0" class="form-control">
 	 </div>
 	 <div class="row form-group">
-		 <p id="question1">What is 50/5?</p>
+		 <p id="question1" class="text-left">What is 50/5?</p>
 		 <input type="text" id="answer1" class="form-control">
 	 </div>
 	 <div class="row form-group">
-			<p id="question2">What is the capital of UK</p>
+			<p id="question2" class="text-left">What is the capital of UK</p>
 			<input type="text" id="answer2" class="form-control">
 	</div>
  	<div class="row form-group">
-			<p id="question3">How many Tosy Story films have there been so far</p>
+			<p id="question3" class="text-left">How many Tosy Story films have there been so far</p>
 			<input type="text" id="answer3" class="form-control">
 	</div>
 	<div class="row form-group">
-			<p id="question4">What is the second letter of the alphabet?</p>
+			<p id="question4" class="text-left">What is the second letter of the alphabet?</p>
 			<input type="text" id="answer4" class="form-control">
 	</div>
 	<div class="row form-group">
-			<p id="question5">What is the third planet from the sun</p>
+			<p id="question5" class="text-left">What is the third planet from the sun</p>
 			<input type="text" id="answer5" class="form-control">
   </div>
 	<div class="row form-group">
-	 		<p id="question6">Where is gotham city?</p>
+	 		<p id="question6" class="text-left">Where is gotham city?</p>
 			<input type="text" id="answer6" class="form-control">
 	</div>
 
-		<button type="button" class="btn btn-success d-block mx-auto" onclick="myClick()">Give me answer!</button>
+		<button type="button" class="btn btn-success d-block mx-auto my-5" onclick="myClick()">Give me answer!</button>
 	</section>
 
-	<section id="answer-display">
-		<h2>Correct: <span id="correct"><span></h2>
-		<h2>Incorrect: <span id="incorrect"><span></h2>
+	<footer class="container" id="answer-display">
+			<h2 class="h3">Correct:<span id="correct"><span></h2>
+			<h2 class="h3">Incorrect:<span id="incorrect"><span></h2>
 
-	</section>
+			<!-- particle create by JS -->
+
+
+	</footer>
+
+
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- stats.js lib -->
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
 
 
 
@@ -71,6 +89,11 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		<!-- Original custom JS -->
   	<script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+
 
 
 	</body>

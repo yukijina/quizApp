@@ -3,3 +3,111 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'PT Mono', monospace;
+}
+
+/* HEADER */
+header {
+  margin: 5% 0;
+}
+
+.title {
+  margin-bottom: 8%;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 0.8rem;
+}
+.think-img {
+  height: 20rem;
+}
+
+.title2 {
+  margin: 3%;
+}
+
+header i {
+  font-size: 3rem;
+  color: #000;
+}
+
+/* section - question */
+#question {
+  margin-top: 5rem;
+}
+
+/* Footer ANSWER SECTION */
+#answer-display {
+  margin-bottom: 8%;
+  width: 50%;
+}
+
+/* Media Query */
+@media(max-with: 540px) {
+  /* #answer-display {
+    margin-right: 2%;
+    margin-left: 2%;
+  } */
+}
+
+
+
+
+ /* cat */
+ /* ---- reset ---- */
+/* body{ */
+ /* margin:0; */
+ /* font:normal 75% Arial, Helvetica, sans-serif;
+  } */
+/* canvas{
+  display: block;
+  vertical-align: bottom;
+  } */
+/* ---- particles.js container ---- */
+#particles-js{
+  position:absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #043564;
+  background-image: url("http://vincentgarreau.com/particles.js/assets/img/kbLd9vb_new.gif");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 0 50%;
+  border-radius: 15px;
+}
+/* ---- stats.js ---- */
+/* displayed on top right corner, it is not necessary */
+/* .count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+   color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  } */
+
+.js-count-particles{
+  font-size: 1.1em;
+  }
+
+#stats, .count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  }
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  }
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+   }
