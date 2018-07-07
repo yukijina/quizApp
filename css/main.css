@@ -43,27 +43,14 @@ header i {
   width: 50%;
 }
 
-/* Media Query */
-@media(max-with: 540px) {
-  /* #answer-display {
-    margin-right: 2%;
-    margin-left: 2%;
-  } */
-}
-
-
 
 
  /* cat */
  /* ---- reset ---- */
-/* body{ */
- /* margin:0; */
- /* font:normal 75% Arial, Helvetica, sans-serif;
-  } */
-/* canvas{
-  display: block;
+canvas{
+  display: block; 
   vertical-align: bottom;
-  } */
+  }
 /* ---- particles.js container ---- */
 #particles-js{
   position:absolute;
@@ -108,6 +95,6 @@ header i {
   border-radius: 3px 3px 0 0;
   overflow: hidden;
   }
-  .count-particles{
-    border-radius: 0 0 3px 3px;
-   }
+.count-particles{
+  border-radius: 0 0 3px 3px;
+ }
